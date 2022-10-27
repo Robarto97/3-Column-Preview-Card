@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-light-gray);
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.container .cars {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex: 1;
+  gap: 2rem;
+  padding: 3rem;
+}
+.sedans {
+  background-color: var(--bright-orange);
+}
+.suvs {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+.container .cars img {
+  width: 30%;
+}
+.container .cars h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: var(--very-light-gray);
+  font-size: 2.75rem;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.container .cars p {
+  color: var(--transparent-white);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+.container .cars button {
+  border: none;
+  padding: 0.75rem 2.25rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.sedans button {
+  color: var(--bright-orange);
+}
+.suvs button {
+  color: var(--dark-cyan);
+}
+.luxury button {
+  color: var(--very-dark-cyan);
+}
+.container .cars button:hover {
+  background-color: unset;
+  color: white;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    align-items: flex-start;
+  }
+  .container .cars p {
+    margin-bottom: unset;
+  }
+}
