@@ -54,7 +54,7 @@ body {
 .container .cars img {
   width: 30%;
 }
-.container .cars h2 {
+.container .cars h1 {
   text-transform: uppercase;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
