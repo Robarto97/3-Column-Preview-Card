@@ -79,21 +79,25 @@ body {
   cursor: pointer;
   border: 2px solid white;
 }
+.container .cars button a{
+  text-decoration: none;
+}
 
-.sedans button {
+.sedans button a{
   color: var(--bright-orange);
 }
-.suvs button {
+.suvs button a{
   color: var(--dark-cyan);
 }
-.luxury button {
+.luxury button a{
   color: var(--very-dark-cyan);
 }
 .container .cars button:hover {
   background-color: unset;
+}
+.container .cars button:hover a{
   color: white;
 }
-
 @media screen and (max-width: 375px) {
   body {
     align-items: flex-start;
